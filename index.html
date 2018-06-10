@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>你画我猜</title>
+</head>
+<body>
+
+    <div id="main">
+
+        <div class="container login_container">
+            <h3 class="login_title">你画我猜</h3>
+            <div class="form_item clearfix">
+                <label for="username_input" class="username_label">昵称：</label>
+                <input type="text" class="username_input_inner" id="username_input" placeholder="请输入昵称" />
+            </div>
+            <div class="button_group">
+                <button type="button" class="enter_btn"></button>
+            </div>
+        </div>
+
+        <div class="user_lists_container">
+            <h3 class="user_lists_title">当前房间人数<span class="user_count">0</span>人</h3>
+            <ul class="user_lists">
+            </ul>
+            <div class="button_container"></div>
+        </div>
+
+        <div class="draw_container painter">
+            <canvas id="painter_canvas" width="375" class="my_canvas"></canvas>
+            <h3 class="keywords_container">关键词：<span class="keywords">狗</span></h3>
+        </div>
+
+        <div class="draw_container guessing_graph">
+            <canvas id="gussess_canvas" width="375" class="my_canvas"></canvas>
+            <div class="input_container">
+                <input type="text" placeholder="请输入你的答案" class="answer_input" />
+            </div>
+            <div class="answer_button_container">
+                <button class="confirm_btn">确认</button>
+            </div>
+        </div>
+        <!-- <canvas id="my_canvas" width="375" class="my_canvas" style="border-bottom: 1px solid #000;"></canvas> -->
+    </div>
+
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/Draw.js"></script>
+    <script src="/js/User.js"></script>
+    <!-- <script src="/js/AnswerUser.js"></script> -->
+    <script src="/js/index.js"></script>
+
+    <script>
+    
+        // const painter = new Draw( 'my_canvas' );
+
+    </script>
+
+</body>
+</html>
